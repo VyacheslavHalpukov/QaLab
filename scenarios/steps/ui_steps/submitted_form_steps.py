@@ -12,8 +12,10 @@ class SubmittedFormSteps:
 
     def assert_data_in_form(self, expected_data: AutomationPracticeModel) -> None:
         """Assert data in submitted form"""
+        print('INSERT DATA:')
         print(list(expected_data.__dict__.values()))
         table_data = self.form.read_table()
+        print('DATA IN FORM AFTER SUBMIT BUTTON PRESSED:')
         print(table_data)
         prepare_data = [(exp_data == act_data, name) for name, exp_data, act_data in zip(
             expected_data.__dict__.keys(),
