@@ -1,0 +1,4 @@
+/venv/
+/scenarios/tests/ui_tests/.pytest_cache/
+/scenarios/tests/ui_tests/results/
+/Trash/
